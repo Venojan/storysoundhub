@@ -1,6 +1,12 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
+const exploreMoreBtn = document.querySelector('.scroll__btn a');
+
+exploreMoreBtn.addEventListener('click', function(event) {
+  event.preventDefault();
+  alert('Work in Progress! This feature is coming soon.');
+});
 
 menuBtn.addEventListener("click", (e) => {
   const isOpen = navLinks.classList.contains("open");
